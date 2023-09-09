@@ -1,11 +1,11 @@
 #include <iostream>
 #include "book.hpp"
 
-Book::Book(std::string title, std::string author, int year, std::string under_shelf, bool is_read){
+Book::Book(std::string title, std::string author, int year, std::string genre, bool is_read){
     this->title = title;
     this->author = author;
     this->year = year;
-    this->under_shelf = under_shelf;
+    this->genre = genre;
     this->is_read = is_read;
 }
 
@@ -21,8 +21,8 @@ int Book::get_year(){
     return this->year;
 }   
 
-std::string Book::get_under_shelf(){
-    return this->under_shelf;
+std::string Book::get_genre(){
+    return this->genre;
 }
 
 bool Book::get_is_read(){
@@ -41,8 +41,8 @@ void Book::set_year(int year){
     this->year = year;
 }
 
-void Book::set_under_shelf(std::string under_shelf){
-    this->under_shelf = under_shelf;
+void Book::set_genre(std::string genre){
+    this->genre = genre;
 }
 
 void Book::set_is_read(bool is_read){
@@ -53,6 +53,6 @@ void Book::print(){
     std::cout << "Title: " << this->title << "\n";
     std::cout << "Author: " << this->author << "\n";
     std::cout << "Year: " << this->year << "\n";
-    std::cout << "Under Shelf: " << this->under_shelf << "\n";
+    std::cout << "Under Shelf: " << this->genre << "\n";
     std::cout << "Is Read: " << this->is_read << "\n\n";
 }
