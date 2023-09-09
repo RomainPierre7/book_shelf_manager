@@ -1,0 +1,19 @@
+{
+	"books" : 
+	[
+		{
+			"author" : "George Orwell",
+			"genre" : "Science fiction",
+			"is_read" : "true",
+			"title" : "1984",
+			"year" : "1949"
+		},
+		{
+			"author" : "Joseph Kessel",
+			"genre" : "Biography",
+			"is_read" : "true",
+			"title" : "Mermoz",
+			"year" : "1950"
+		}
+	]
+}
