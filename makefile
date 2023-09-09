@@ -1,6 +1,6 @@
-SRC = src/main.cpp src/book.cpp src/json_parsing.cpp
+SRC = src/main.cpp src/json_parsing.cpp
 
 all: compile
 
 compile:
-	g++ -std=c++11 -o prog $(SRC) -ljsoncpp
+	g++ -std=c++11 -o app $(SRC) -ljsoncpp
